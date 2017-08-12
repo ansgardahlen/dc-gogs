@@ -13,7 +13,7 @@ if [[ -f gogs.conf ]]; then
 fi
 
 if [ -z "$GOGS_HOSTNAME" ]; then
-  read -p "Hostname (FQDN): " -ei "mx.example.org" GOGS_HOSTNAME
+  read -p "Hostname (FQDN): " -ei "gogs.example.org" GOGS_HOSTNAME
 fi
 
 [[ -a /etc/timezone ]] && TZ=$(cat /etc/timezone)
