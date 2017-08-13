@@ -39,8 +39,6 @@ cat << EOF > gogs.conf
 # gogs web ui configuration
 # ------------------------------
 # example.org is _not_ a valid hostname, use a fqdn here.
-# Default admin user is "???"
-# Default password is "???"
 GOGS_HOSTNAME=${GOGS_HOSTNAME}
 
 # ------------------------------
@@ -61,7 +59,7 @@ DBPASS=${DBPASS}
 DBROOT=$(</dev/urandom tr -dc A-Za-z0-9 | head -c 28)
 
 # ------------------------------
-# HTTP/S Bindings
+# Bindings
 # ------------------------------
 
 # You should use HTTPS, but in case of SSL offloaded reverse proxies:

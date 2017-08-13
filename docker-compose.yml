@@ -3,7 +3,6 @@ services:
 
   git:
     image: gogs/gogs
-#    build: ./data/Dockerfiles/gogs
     ports:
      - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
      - "${SSH_BIND:-0.0.0.0}:${SSH_PORT:-10022}:${SSH_PORT:-10022}"
@@ -11,8 +10,6 @@ services:
      - ./data/git/:/data:rw
     links:
      - git_db:mysqli
-    #command: bash -c "su git -c \"/app/gogs/gogs admin create-user --name gogsadmin2 --password changeme --email test@googlemail.com --admin true\""
-    #command: bash -c "echo hallo > /tmp/hallo.out"
 
   git_db:
     image: mysql:5.6
