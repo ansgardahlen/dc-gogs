@@ -16,11 +16,9 @@ if [ -z "$GOGS_HOSTNAME" ]; then
   read -p "Hostname (FQDN): " -ei "gogs.example.org" GOGS_HOSTNAME
 fi
 
-[[ -a /etc/timezone ]] && TZ=$(cat /etc/timezone)
+[[ -f /etc/timezone ]] && TZ=$(cat /etc/timezone)
 if [ -z "$TZ" ]; then
   read -p "Timezone: " -ei "Europe/Berlin" TZ
-else
-  read -p "Timezone: " -ei ${TZ} TZ
 fi
 
 cat << EOF > gogs.conf
@@ -36,6 +34,7 @@ GOGS_HOSTNAME=${GOGS_HOSTNAME}
 # GOGS admin user
 # ------------------------------
 GOGS_ADMIN=gogsadmin
+GOGS_ADMIN_MAIL=mail@example.com
 GOGS_PASS=$(</dev/urandom tr -dc A-Za-z0-9 | head -c 28)
 
 # ------------------------------
@@ -53,7 +52,7 @@ DBROOT=$(</dev/urandom tr -dc A-Za-z0-9 | head -c 28)
 # ------------------------------
 
 # You should use HTTPS, but in case of SSL offloaded reverse proxies:
-HTTP_PORT=80
+HTTP_PORT=3000
 HTTP_BIND=0.0.0.0
 
 HTTPS_PORT=443
