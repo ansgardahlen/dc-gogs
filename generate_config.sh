@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ -f gogs.conf ]]; then
-  read -r -p "A config file exists and will be overwritten, are you sure you want to contine? [y/N] " response
+  read -r -p "config file gogs.conf exists and will be overwritten, are you sure you want to contine? [y/N] " response
   case $response in
     [yY][eE][sS]|[yY])
       mv gogs.conf gogs.conf_backup
@@ -27,7 +27,7 @@ fi
 
 
 DBNAME=gogs
-GNUSER=gogs
+DBUSER=gogs
 DBPASS=$(</dev/urandom tr -dc A-Za-z0-9 | head -c 28)
 
 HTTP_PORT=3000
@@ -83,6 +83,18 @@ COMPOSE_PROJECT_NAME=gogs
 EOF
 
 mkdir -p data/git/gogs/conf
+
+if [[ -f ./data/git/gogs/conf/app.ini ]]; then
+  read -r -p "config file app.ini exists and will be overwritten, are you sure you want to contine? [y/N] " response
+  case $response in
+    [yY][eE][sS]|[yY])
+      mv ./data/git/gogs/conf/app.ini ./data/git/gogs/conf/app.ini_backup
+      ;;
+    *)
+      exit 1
+    ;;
+  esac
+fi
 
 cat << EOF > data/git/gogs/conf/app.ini
 APP_NAME = Gogs
