@@ -16,7 +16,7 @@ if [ -z "$GOGS_HOSTNAME" ]; then
   read -p "Hostname (FQDN): " -ei "gogs.example.org" GOGS_HOSTNAME
 fi
 
-if [ -z "$GOGS_ADMIN_MAIL" ], then
+if [ -z "$GOGS_ADMIN_MAIL" ]; then
   read -p "Gogs admin Mail address: " -ei "mail@example.com" GOGS_ADMIN_MAIL
 fi
 
