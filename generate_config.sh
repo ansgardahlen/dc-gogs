@@ -33,6 +33,12 @@ cat << EOF > gogs.conf
 GOGS_HOSTNAME=${GOGS_HOSTNAME}
 
 # ------------------------------
+# GOGS admin user
+# ------------------------------
+GOGS_ADMIN=gogsadmin
+GOGS_PASS=$(</dev/urandom tr -dc A-Za-z0-9 | head -c 28)
+
+# ------------------------------
 # SQL database configuration
 # ------------------------------
 DBNAME=gogs
