@@ -1,0 +1,123 @@
+2017/08/14 22:30:11 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:11 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:11 [ INFO] Cache Service Enabled
+2017/08/14 22:30:11 [ INFO] Session Service Enabled
+2017/08/14 22:30:11 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:11 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:11 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:11 [ INFO] Cache Service Enabled
+2017/08/14 22:30:11 [ INFO] Session Service Enabled
+2017/08/14 22:30:11 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:12 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:12 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:12 [ INFO] Cache Service Enabled
+2017/08/14 22:30:12 [ INFO] Session Service Enabled
+2017/08/14 22:30:12 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:13 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:13 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:13 [ INFO] Cache Service Enabled
+2017/08/14 22:30:13 [ INFO] Session Service Enabled
+2017/08/14 22:30:13 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:14 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:14 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:14 [ INFO] Cache Service Enabled
+2017/08/14 22:30:14 [ INFO] Session Service Enabled
+2017/08/14 22:30:14 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:15 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:15 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:15 [ INFO] Cache Service Enabled
+2017/08/14 22:30:15 [ INFO] Session Service Enabled
+2017/08/14 22:30:15 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:16 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:16 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:16 [ INFO] Cache Service Enabled
+2017/08/14 22:30:16 [ INFO] Session Service Enabled
+2017/08/14 22:30:16 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:17 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:17 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:17 [ INFO] Cache Service Enabled
+2017/08/14 22:30:17 [ INFO] Session Service Enabled
+2017/08/14 22:30:17 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:18 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:18 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:18 [ INFO] Cache Service Enabled
+2017/08/14 22:30:18 [ INFO] Session Service Enabled
+2017/08/14 22:30:18 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:19 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:19 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:19 [ INFO] Cache Service Enabled
+2017/08/14 22:30:19 [ INFO] Session Service Enabled
+2017/08/14 22:30:19 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:20 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:20 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:20 [ INFO] Cache Service Enabled
+2017/08/14 22:30:20 [ INFO] Session Service Enabled
+2017/08/14 22:30:20 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:21 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:21 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:21 [ INFO] Cache Service Enabled
+2017/08/14 22:30:21 [ INFO] Session Service Enabled
+2017/08/14 22:30:21 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:22 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:22 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:22 [ INFO] Cache Service Enabled
+2017/08/14 22:30:22 [ INFO] Session Service Enabled
+2017/08/14 22:30:22 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:23 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:23 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:23 [ INFO] Cache Service Enabled
+2017/08/14 22:30:23 [ INFO] Session Service Enabled
+2017/08/14 22:30:23 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:30:24 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:30:24 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:30:24 [ INFO] Cache Service Enabled
+2017/08/14 22:30:24 [ INFO] Session Service Enabled
+2017/08/14 22:30:33 [ INFO] Git Version: 2.11.2
+2017/08/14 22:30:33 [ INFO] Git config user.name set to Gogs
+2017/08/14 22:30:33 [ INFO] Git config user.email set to gogs@fake.local
+2017/08/14 22:30:33 [ INFO] SQLite3 Supported
+2017/08/14 22:30:33 [ INFO] Run Mode: Production
+2017/08/14 22:30:33 [TRACE] Doing: CheckRepoStats
+2017/08/14 22:30:34 [TRACE] SSH: New private key is generateed: data/ssh/gogs.rsa
+2017/08/14 22:30:34 [ INFO] SSH server started on 0.0.0.0:10022
+2017/08/14 22:30:34 [TRACE] SSH server cipher list: [aes128-ctr aes192-ctr aes256-ctr aes128-gcm@openssh.com arcfour256 arcfour128]
+2017/08/14 22:30:34 [ INFO] Listen: http://0.0.0.0:3000
+2017/08/14 22:36:06 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:36:06 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:36:06 [ INFO] Cache Service Enabled
+2017/08/14 22:36:06 [ INFO] Session Service Enabled
+2017/08/14 22:36:06 [ INFO] Git Version: 2.11.2
+2017/08/14 22:36:06 [ INFO] SQLite3 Supported
+2017/08/14 22:36:06 [ INFO] Run Mode: Production
+2017/08/14 22:36:06 [ INFO] SSH server started on 0.0.0.0:10022
+2017/08/14 22:36:06 [TRACE] SSH server cipher list: [aes128-ctr aes192-ctr aes256-ctr aes128-gcm@openssh.com arcfour256 arcfour128]
+2017/08/14 22:36:06 [TRACE] Doing: CheckRepoStats
+2017/08/14 22:36:06 [ INFO] Listen: http://0.0.0.0:3000
+2017/08/14 22:46:06 [TRACE] Doing: MirrorUpdate
+2017/08/14 22:54:06 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:54:06 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:54:06 [ INFO] Cache Service Enabled
+2017/08/14 22:54:06 [ INFO] Session Service Enabled
+2017/08/14 22:54:06 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:54:07 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:54:07 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:54:07 [ INFO] Cache Service Enabled
+2017/08/14 22:54:07 [ INFO] Session Service Enabled
+2017/08/14 22:54:07 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:54:08 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:54:08 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:54:08 [ INFO] Cache Service Enabled
+2017/08/14 22:54:08 [ INFO] Session Service Enabled
+2017/08/14 22:54:08 [FATAL] [...gs/routes/install.go:66 GlobalInit()] Fail to initialize ORM engine: migrate: sync: dial tcp 172.18.0.2:3306: getsockopt: connection refused
+2017/08/14 22:54:09 [TRACE] Log Mode: File (Trace)
+2017/08/14 22:54:09 [ INFO] Gogs 0.11.28.0718
+2017/08/14 22:54:09 [ INFO] Cache Service Enabled
+2017/08/14 22:54:09 [ INFO] Session Service Enabled
+2017/08/14 22:54:09 [ INFO] Git Version: 2.11.2
+2017/08/14 22:54:09 [ INFO] SQLite3 Supported
+2017/08/14 22:54:09 [ INFO] Run Mode: Production
+2017/08/14 22:54:09 [TRACE] Doing: CheckRepoStats
+2017/08/14 22:54:09 [ INFO] SSH server started on 0.0.0.0:10022
+2017/08/14 22:54:09 [TRACE] SSH server cipher list: [aes128-ctr aes192-ctr aes256-ctr aes128-gcm@openssh.com arcfour256 arcfour128]
+2017/08/14 22:54:10 [ INFO] Listen: http://0.0.0.0:3000
+2017/08/14 23:04:09 [TRACE] Doing: MirrorUpdate

@@ -2,16 +2,26 @@ version: '2.1'
 services:
 
   git:
+    restart: always
     image: gogs/gogs
     ports:
      - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
      - "${SSH_BIND:-0.0.0.0}:${SSH_PORT:-10022}:${SSH_PORT:-10022}"
     volumes:
      - ./data/git/:/data:rw
+    environment:
+      - VIRTUAL_HOST=${GOGS_HOSTNAME}
+      - VIRTUAL_PORT=${HTTP_PORT:-3000}
+      - LETSENCRYPT_HOST=${GOGS_HOSTNAME}
+      - LETSENCRYPT_EMAIL=${GOGS_ADMIN_MAIL}
     links:
      - git_db:mysqli
+    networks:
+      - default
+      - proxy_default
 
   git_db:
+    restart: always
     image: mysql:5.6
     environment:
      - MYSQL_ROOT_PASSWORD=${DBROOT}
@@ -23,3 +33,10 @@ services:
 
 volumes:
   git-db-vol-1:
+
+networks:
+    default:
+        driver: bridge
+    proxy_default: 
+        external: true
+
