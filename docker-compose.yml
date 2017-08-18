@@ -16,8 +16,9 @@ services:
       - LETSENCRYPT_EMAIL=${GOGS_ADMIN_MAIL}
     links:
      - git_db:mysqli
-    networks:
-      - default
+#    networks:
+#      - default
+#      - proxy_default
 
   git_db:
     restart: always
@@ -33,7 +34,9 @@ services:
 volumes:
   git-db-vol-1:
 
-networks:
-    default:
-        driver: bridge
+#networks:
+#    default:
+#        driver: bridge
+#    proxy_default: 
+#        external: true
 
