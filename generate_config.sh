@@ -76,7 +76,7 @@ SSH_BIND=0.0.0.0
 TZ=${TZ}
 
 # Fixed project name
-COMPOSE_PROJECT_NAME=gogs
+#COMPOSE_PROJECT_NAME=gogs
 
 EOF
 
