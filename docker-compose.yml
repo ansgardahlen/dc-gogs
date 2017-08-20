@@ -4,6 +4,7 @@ services:
   git:
     restart: always
     image: gogs/gogs
+    container_name: dc_git
     ports:
      - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
      - "${SSH_BIND:-0.0.0.0}:${SSH_PORT:-10022}:${SSH_PORT:-10022}"
@@ -15,11 +16,13 @@ services:
       - LETSENCRYPT_HOST=${GOGS_HOSTNAME}
       - LETSENCRYPT_EMAIL=${GOGS_ADMIN_MAIL}
     links:
-     - git_db:mysqli
+     - dc_git_db:mysqli
+     - dc_git_db:dc_git_db
 
   git_db:
     restart: always
     image: mysql:5.6
+    container_name: dc_git_db
     environment:
      - MYSQL_ROOT_PASSWORD=${DBROOT}
      - MYSQL_DATABASE=${DBNAME}

@@ -101,7 +101,7 @@ RUN_MODE = prod
 
 [database]
 DB_TYPE  = mysql
-HOST     = git_db:3306
+HOST     = dc_git_db:3306
 NAME     = ${DBNAME}
 USER     = ${DBUSER}
 PASSWD   = ${DBPASS}
