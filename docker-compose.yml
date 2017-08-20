@@ -16,8 +16,8 @@ services:
       - LETSENCRYPT_HOST=${GOGS_HOSTNAME}
       - LETSENCRYPT_EMAIL=${GOGS_ADMIN_MAIL}
     links:
-     - dc_git_db:mysqli
-     - dc_git_db:dc_git_db
+     - git_db:mysqli
+     - git_db:dc_git_db
 
   git_db:
     restart: always
