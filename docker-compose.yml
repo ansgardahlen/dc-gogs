@@ -1,37 +1,37 @@
 version: '2.1'
 services:
 
-  git:
+  gogs:
     restart: always
     image: gogs/gogs
-    container_name: dc_git
+    container_name: dc_gogs
     ports:
-     - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
+#     - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
      - "${SSH_BIND:-0.0.0.0}:${SSH_PORT:-10022}:${SSH_PORT:-10022}"
     volumes:
-     - ./data/git/:/data:rw
+     - ./data/gogs/:/data:rw
     environment:
       - VIRTUAL_HOST=${GOGS_HOSTNAME}
       - VIRTUAL_PORT=${HTTP_PORT:-3000}
       - LETSENCRYPT_HOST=${GOGS_HOSTNAME}
       - LETSENCRYPT_EMAIL=${GOGS_ADMIN_MAIL}
     links:
-     - git_db:mysqli
-     - git_db:dc_git_db
+     - gogs_db:mysqli
+     - gogs_db:dc_gogs_db
 
-  git_db:
+  gogs_db:
     restart: always
     image: mysql:5.6
-    container_name: dc_git_db
+    container_name: dc_gogs_db
     environment:
      - MYSQL_ROOT_PASSWORD=${DBROOT}
      - MYSQL_DATABASE=${DBNAME}
      - MYSQL_USER=${DBUSER}
      - MYSQL_PASSWORD=${DBPASS}
     volumes:
-     - git-db-vol-1:/var/lib/mysql:rw
+     - gogs-db-vol-1:/var/lib/mysql:rw
 
 volumes:
-  git-db-vol-1:
+  gogs-db-vol-1:
 
 
