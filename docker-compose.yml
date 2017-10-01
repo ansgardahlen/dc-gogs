@@ -29,9 +29,6 @@ services:
      - MYSQL_USER=${DBUSER}
      - MYSQL_PASSWORD=${DBPASS}
     volumes:
-     - gogs-db-vol-1:/var/lib/mysql:rw
-
-volumes:
-  gogs-db-vol-1:
+     - ./data/mysql/:/var/lib/mysql:rw
 
 
