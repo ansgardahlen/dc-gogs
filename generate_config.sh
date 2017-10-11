@@ -80,13 +80,13 @@ TZ=${TZ}
 
 EOF
 
-mkdir -p data/git/gogs/conf
+mkdir -p data/gogs/gogs/conf
 
-if [[ -f ./data/git/gogs/conf/app.ini ]]; then
+if [[ -f ./data/gogs/gogs/conf/app.ini ]]; then
   read -r -p "config file app.ini exists and will be overwritten, are you sure you want to contine? [y/N] " response
   case $response in
     [yY][eE][sS]|[yY])
-      mv ./data/git/gogs/conf/app.ini ./data/git/gogs/conf/app.ini_backup
+      mv ./data/gogs/gogs/conf/app.ini ./data/gogs/gogs/conf/app.ini_backup
       ;;
     *)
       exit 1
@@ -94,14 +94,14 @@ if [[ -f ./data/git/gogs/conf/app.ini ]]; then
   esac
 fi
 
-cat << EOF > data/git/gogs/conf/app.ini
+cat << EOF > data/gogs/gogs/conf/app.ini
 APP_NAME = Gogs
 RUN_USER = git
 RUN_MODE = prod
 
 [database]
 DB_TYPE  = mysql
-HOST     = dc_git_db:3306
+HOST     = dc_gogs_db:3306
 NAME     = ${DBNAME}
 USER     = ${DBUSER}
 PASSWD   = ${DBPASS}
@@ -109,7 +109,7 @@ SSL_MODE = disable
 PATH     = data/gogs.db
 
 [repository]
-ROOT = /data/git/gogs-repositories
+ROOT = /data/gogs/gogs-repositories
 
 [server]
 DOMAIN           = ${GOGS_HOSTNAME}
@@ -128,7 +128,7 @@ REGISTER_EMAIL_CONFIRM = false
 ENABLE_NOTIFY_MAIL     = false
 DISABLE_REGISTRATION   = true
 ENABLE_CAPTCHA         = true
-REQUIRE_SIGNIN_VIEW    = false
+REQUIRE_SIGNIN_VIEW    = true
 
 [picture]
 DISABLE_GRAVATAR        = false

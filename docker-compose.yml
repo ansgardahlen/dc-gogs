@@ -6,7 +6,7 @@ services:
     image: gogs/gogs
     container_name: dc_gogs
     ports:
-#     - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
+     - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
      - "${SSH_BIND:-0.0.0.0}:${SSH_PORT:-10022}:${SSH_PORT:-10022}"
     volumes:
      - ./data/gogs/:/data:rw
@@ -21,7 +21,7 @@ services:
 
   gogs_db:
     restart: always
-    image: mysql:5.6
+    image: mariadb:latest
     container_name: dc_gogs_db
     environment:
      - MYSQL_ROOT_PASSWORD=${DBROOT}
