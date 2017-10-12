@@ -6,15 +6,15 @@ services:
     image: gogs/gogs
     container_name: dc_gogs
     ports:
-     - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
+#     - "${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-3000}:${HTTP_PORT:-3000}"
      - "${SSH_BIND:-0.0.0.0}:${SSH_PORT:-10022}:${SSH_PORT:-10022}"
     volumes:
      - ./data/gogs/:/data:rw
     environment:
-      - VIRTUAL_HOST=${GOGS_HOSTNAME}
+      - VIRTUAL_HOST=${PUBLIC_FQDN}
       - VIRTUAL_PORT=${HTTP_PORT:-3000}
-      - LETSENCRYPT_HOST=${GOGS_HOSTNAME}
-      - LETSENCRYPT_EMAIL=${GOGS_ADMIN_MAIL}
+      - LETSENCRYPT_HOST=${PUBLIC_FQDN}
+      - LETSENCRYPT_EMAIL=${ADMIN_MAIL}
     links:
      - gogs_db:mysqli
      - gogs_db:dc_gogs_db

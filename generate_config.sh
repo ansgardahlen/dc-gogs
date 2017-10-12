@@ -12,12 +12,12 @@ if [[ -f gogs.conf ]]; then
   esac
 fi
 
-if [ -z "$GOGS_HOSTNAME" ]; then
-  read -p "Hostname (FQDN): " -ei "gogs.example.org" GOGS_HOSTNAME
+if [ -z "$PUBLIC_FQDN" ]; then
+  read -p "Hostname (FQDN): " -ei "gogs.example.org" PUBLIC_FQDN
 fi
 
-if [ -z "$GOGS_ADMIN_MAIL" ]; then
-  read -p "Gogs admin Mail address: " -ei "mail@example.com" GOGS_ADMIN_MAIL
+if [ -z "$ADMIN_MAIL" ]; then
+  read -p "Gogs admin Mail address: " -ei "mail@example.com" ADMIN_MAIL
 fi
 
 [[ -f /etc/timezone ]] && TZ=$(cat /etc/timezone)
@@ -39,13 +39,13 @@ cat << EOF > gogs.conf
 # gogs web ui configuration
 # ------------------------------
 # example.org is _not_ a valid hostname, use a fqdn here.
-GOGS_HOSTNAME=${GOGS_HOSTNAME}
+PUBLIC_FQDN=${PUBLIC_FQDN}
 
 # ------------------------------
 # GOGS admin user
 # ------------------------------
 GOGS_ADMIN=gogsadmin
-GOGS_ADMIN_MAIL=${GOGS_ADMIN_MAIL}
+ADMIN_MAIL=${ADMIN_MAIL}
 GOGS_PASS=$(</dev/urandom tr -dc A-Za-z0-9 | head -c 28)
 
 # ------------------------------
@@ -112,9 +112,9 @@ PATH     = data/gogs.db
 ROOT = /data/gogs/gogs-repositories
 
 [server]
-DOMAIN           = ${GOGS_HOSTNAME}
+DOMAIN           = ${PUBLIC_FQDN}
 HTTP_PORT        = ${HTTP_PORT}
-ROOT_URL         = http://${GOGS_HOSTNAME}:${HTTP_PORT}/
+ROOT_URL         = http://${PUBLIC_FQDN}:${HTTP_PORT}/
 DISABLE_SSH      = false
 SSH_PORT         = ${SSH_PORT}
 START_SSH_SERVER = true
