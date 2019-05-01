@@ -110,6 +110,7 @@ PATH     = data/gogs.db
 
 [repository]
 ROOT = /data/gogs/gogs-repositories
+FORCE_PRIVATE = true
 
 [server]
 DOMAIN           = ${PUBLIC_FQDN}
